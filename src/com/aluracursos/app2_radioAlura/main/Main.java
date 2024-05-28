@@ -8,6 +8,7 @@ package com.aluracursos.app2_radioAlura.main;   //paquete main
 
 import com.aluracursos.app2_radioAlura.modelos.Cancion;  //importar paquete modelos y nombre de la subclase Cancion
 import com.aluracursos.app2_radioAlura.modelos.Podcast;  //importar paquete modelos y nombre de la subclase Podcast
+import com.aluracursos.app2_radioAlura.modelos.MisFavoritos;
 
 public class Main {     //clase Main dentro del paquete main
 
@@ -27,14 +28,35 @@ public class Main {     //clase Main dentro del paquete main
         }
 
         //test de metodo reproducir() para objeto miCancion
-        for (int i = 0; i < 5000; i++) {
+        for (int i = 0; i < 2000; i++) {
             miCancion.reproducir();
         }
+
+        //---------------------------------------------------------
+
+        //test de metodo meGusta() para objeto miPodcast
+        for (int i = 0; i < 100; i++) {
+            miPodcast.meGusta();
+        }
+
+        //test de metodo reproducir() para objeto miPodcast
+        for (int i = 0; i < 8000; i++) {
+            miPodcast.reproducir();
+        }
+
 
         //Imprimir valores
         System.out.println("--------------Imprimir valores-----------");
         System.out.println("Total de reproducciones: " + miCancion.getTotalDeReproducciones());
         System.out.println("Total de me Gusta: " + miCancion.getTotalDeMeGustas());
+
+
+        //Llamada y crear la nueva instancia 3
+        MisFavoritos favoritos = new MisFavoritos();
+        favoritos.adicionar(miPodcast);
+        favoritos.adicionar(miCancion);
+
+
 
     }
 }
