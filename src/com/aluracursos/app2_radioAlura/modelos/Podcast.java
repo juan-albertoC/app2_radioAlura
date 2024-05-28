@@ -13,6 +13,18 @@ public class Podcast extends Audio {   //Podcast es subclase de Audio, relacion 
     private String presentador;
     private String descripcion;
 
+    //sobrescribir
+
+    @Override
+    public int getClasificacion() {
+        //clasificacion con reglas
+        if(getTotalDeReproducciones() >= 2000){
+            return 9; //retorna una calificacion de 9
+        }else {
+            return 2; //retorna una calificacion de 2
+        }
+    }
+
 
     //getters and setters
 

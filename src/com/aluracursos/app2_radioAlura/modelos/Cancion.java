@@ -14,6 +14,19 @@ public class Cancion extends Audio {  //Cancion es subclase de Audio, relacion d
     private String cantante;
     private String genero;
 
+    //sobrescribir
+
+    @Override
+    public int getClasificacion() {
+        //clasificacion con reglas
+        if(getTotalDeMeGustas() > 5000){
+            return 8; //retorna una calificacion de 8
+        }else {
+            return 4; //retorna una calificacion de 4
+        }
+    }
+
+
     //getters and setters
 
     public String getAlbum() {
