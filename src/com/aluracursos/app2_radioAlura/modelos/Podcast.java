@@ -6,7 +6,7 @@ POO
 
 package com.aluracursos.app2_radioAlura.modelos;  //paquete modelos
 
-public class Podcast {   //subclase de Audio
+public class Podcast extends Audio {   //Podcast es subclase de Audio, relacion de herencia entre la clase Podcast y Audio
 
     //atributos
 
