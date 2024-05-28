@@ -1,0 +1,42 @@
+/*
+Juan Alberto Cuevas Juarez
+27/05/2024
+POO
+ */
+
+package com.aluracursos.app2_radioAlura.modelos;  //paquete modelos
+
+public class Cancion extends Audio {  //subclase de Audio
+
+    //atributos
+
+    private String album;
+    private String cantante;
+    private String genero;
+
+    //getters and setters
+
+    public String getAlbum() {
+        return album;
+    }
+
+    public void setAlbum(String album) {
+        this.album = album;
+    }
+
+    public String getCantante() {
+        return cantante;
+    }
+
+    public void setCantante(String cantante) {
+        this.cantante = cantante;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+}

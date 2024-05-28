@@ -1,4 +1,10 @@
-package com.aluracursos.app2_radioAlura.modelos;
+/*
+Juan Alberto Cuevas Juarez
+27/05/2024
+POO
+ */
+
+package com.aluracursos.app2_radioAlura.modelos;      //paquete modelos
 
 public class Audio {
     //atributos
@@ -12,7 +18,7 @@ public class Audio {
     //metodos de funcionalidad de cualquier audio dentro del radio
     public void meGusta(){   //metodo que incrementa los meGustas
 
-        this.totalDeMeGustas++;  
+        this.totalDeMeGustas++;
 
     }
 
